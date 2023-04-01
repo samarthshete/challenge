@@ -2,13 +2,12 @@ function fizzBuzz(phoneNumber) {
   var output = "";
   var sum = 0;
   phoneNumber = phoneNumber.toString();
-
-  // Calculate the sum of the digits in the phone number
+ 
   for (var i = 0; i < phoneNumber.length; i++) {
     sum += parseInt(phoneNumber.charAt(i));
   }
 
-  // Loop from 1 to the sum of the digits in the phone number
+   
   for (var i = 1; i <= sum; i++) {
     if (i % 3 === 0 && i % 4 === 0) {
       output += "FizzBuzz ";
